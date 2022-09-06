@@ -13,11 +13,10 @@ pip install -r requirements.txt
 ```
 
 ### Запуск тестов
- - Перед запуском тестов необходимо перейти в каталог проекта `https://github.com/p2cbbb/api_automation_project`
+ - Перед запуском тестов необходимо перейти в каталог проекта `api_automation_project`
  
 Аргументы запуска:
-- -s - показывать принты в процессе выполнения
-- -v - verbose режим, чтобы видеть, какие тесты были запущены
+- --alluredir - указывает директорию для сохранения отчетов
 ```bash
 python -m pytest --alluredir=test_results/ tests/test_google_maps_api.py
 allure serve test_results/
