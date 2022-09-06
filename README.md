@@ -19,5 +19,6 @@ pip install -r requirements.txt
 - -s - показывать принты в процессе выполнения
 - -v - verbose режим, чтобы видеть, какие тесты были запущены
 ```bash
-python -m pytest -v -s tests
+python -m pytest --alluredir=test_results/ tests/test_google_maps_api.py
+allure serve test_results/
 ```
